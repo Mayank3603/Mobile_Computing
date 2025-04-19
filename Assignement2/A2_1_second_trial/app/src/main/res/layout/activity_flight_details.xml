@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/flightDetailsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Flight Number Header -->
+        <TextView
+            android:id="@+id/tvFlightNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Flight Number: "
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Departure Section -->
+        <LinearLayout
+            android:id="@+id/llDeparture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/section_background"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/tvDepartureHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Departure"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tvDepartureDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Airport: \nScheduled: "
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Arrival Section -->
+        <LinearLayout
+            android:id="@+id/llArrival"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/section_background"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/tvArrivalHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Arrival"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tvArrivalDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Airport: \nScheduled: "
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Status Section -->
+        <LinearLayout
+            android:id="@+id/llStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <!-- Green dot as a status indicator -->
+            <TextView
+                android:id="@+id/tvStatusIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🟢"
+                android:textSize="18sp"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:id="@+id/tvStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Active"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Current Time Section -->
+        <LinearLayout
+            android:id="@+id/llCurrentTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/section_background"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/tvCurrentTimeLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Current Time"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tvCurrentTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time: "
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvTimeLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time Left: "
+                android:textSize="16sp"
+                android:layout_marginTop="4dp"/>
+        </LinearLayout>
+
+        <!-- Live Position Section -->
+        <LinearLayout
+            android:id="@+id/llLivePosition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/section_background"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp">
+            <TextView
+                android:id="@+id/tvLivePositionLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Live Position"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+            <TextView
+                android:id="@+id/tvCurrentLatitude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Latitude: "
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/tvCurrentLongitude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Longitude: "
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Map Section -->
+        <LinearLayout
+            android:id="@+id/llMapSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/section_background"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/tvMapLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Flight Map"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnShowMap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Map"
+            android:layout_marginTop="16dp"/>
+
+
+    </LinearLayout>
+</ScrollView>

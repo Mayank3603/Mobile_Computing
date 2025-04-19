@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <!-- Label -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Flight Number:"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Input for flight number -->
+    <EditText
+        android:id="@+id/etFlightNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Flight Number"
+        android:inputType="text"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Button to fetch flight details -->
+    <Button
+        android:id="@+id/btnFetchDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fetch Flight Details"/>
+</LinearLayout>
