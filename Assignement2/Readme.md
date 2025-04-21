@@ -135,3 +135,11 @@ Converts `LocalDateTime` ↔ `String` for Room compatibility.
 
 ---
 
+## places 
+- JFK → New York City
+- SEA → Seattle
+- ATL → Atlanta
+- LAX → Los Angeles
+- ORD → Chicago
+- SFO → San Francisco
+
