@@ -168,32 +168,32 @@
                 android:textSize="16sp" />
         </LinearLayout>
 
-        <!-- Map Section -->
-        <LinearLayout
-            android:id="@+id/llMapSection"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:background="@drawable/section_background"
-            android:padding="12dp"
-            android:layout_marginBottom="16dp">
+<!--        &lt;!&ndash; Map Section &ndash;&gt;-->
+<!--        <LinearLayout-->
+<!--            android:id="@+id/llMapSection"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical"-->
+<!--            android:background="@drawable/section_background"-->
+<!--            android:padding="12dp"-->
+<!--            android:layout_marginBottom="16dp">-->
 
-            <TextView
-                android:id="@+id/tvMapLabel"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Flight Map"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:layout_marginBottom="8dp" />
-        </LinearLayout>
+<!--            <TextView-->
+<!--                android:id="@+id/tvMapLabel"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Flight Map"-->
+<!--                android:textSize="18sp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:layout_marginBottom="8dp" />-->
+<!--        </LinearLayout>-->
 
-        <Button
-            android:id="@+id/btnShowMap"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Show Map"
-            android:layout_marginTop="16dp"/>
+<!--        <Button-->
+<!--            android:id="@+id/btnShowMap"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Show Map"-->
+<!--            android:layout_marginTop="16dp"/>-->
 
 
     </LinearLayout>

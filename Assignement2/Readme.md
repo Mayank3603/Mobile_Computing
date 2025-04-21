@@ -1,7 +1,7 @@
 # ✈️ MCA Assignment 2 – Flight Tracker & Analyzer
 
-**Author:** Arnav Agarwal  
-**Roll No.:** 2021235
+**Author:** Mayank Gupta 
+**Roll No.:** 2021065
 
 This project demonstrates the use of APIs, Jetpack components, Room database, background jobs, and map visualizations in an Android application. It is divided into two parts: a real-time flight tracker and a flight data analytics tool.
 

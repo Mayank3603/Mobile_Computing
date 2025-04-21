@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <!-- Flight Number and Date -->
+    <TextView
+        android:id="@+id/tvFlightNumberAndDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Flight: ABC123 on 2023-01-01"
+        android:textSize="14sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Flight Route -->
+    <TextView
+        android:id="@+id/tvFlightRoute"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Route: Origin -> Destination"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/tvFlightNumberAndDate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="4dp"/>
+
+    <!-- Flight Times (formatted to HH:mm) -->
+    <TextView
+        android:id="@+id/tvFlightTimes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Actual: 00:00 - 00:00"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/tvFlightRoute"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="4dp"/>
+
+    <!-- Flight Duration -->
+    <TextView
+        android:id="@+id/tvFlightDuration"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Duration: 0h 00min"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/tvFlightTimes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="4dp"/>
+
+    <!-- Arrival Delay -->
+    <TextView
+        android:id="@+id/tvArrivalDelay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Delay: No delay"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/tvFlightDuration"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="4dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

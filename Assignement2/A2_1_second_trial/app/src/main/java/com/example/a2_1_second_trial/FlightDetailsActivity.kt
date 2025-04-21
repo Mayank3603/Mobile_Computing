@@ -36,10 +36,10 @@ class FlightDetailsActivity : AppCompatActivity() {
     private lateinit var tvTimeLeft: TextView
     private lateinit var tvCurrentLatitude: TextView
     private lateinit var tvCurrentLongitude: TextView
-    private lateinit var btnShowMap: Button
+//    private lateinit var btnShowMap: Button
 
     // Your API access key
-    private val ACCESS_KEY = "071a870bdaa6d3e1cf50df10627bca67"
+    private val ACCESS_KEY = "362eed0c2d233181458ca8d329caa1a1"
 
     // Handler to update UI and fetch API periodically
     private val updateHandler = Handler(Looper.getMainLooper())
@@ -67,7 +67,7 @@ class FlightDetailsActivity : AppCompatActivity() {
         tvTimeLeft = findViewById(R.id.tvTimeLeft)
         tvCurrentLatitude = findViewById(R.id.tvCurrentLatitude)
         tvCurrentLongitude = findViewById(R.id.tvCurrentLongitude)
-        btnShowMap = findViewById(R.id.btnShowMap)
+//        btnShowMap = findViewById(R.id.btnShowMap)
 
         // Get flight number from intent
         val flightNumber = intent.getStringExtra("flightNumber") ?: ""
@@ -82,29 +82,29 @@ class FlightDetailsActivity : AppCompatActivity() {
         fetchFlightData(flightNumber)
 
         // Set up button click to launch FlightMapActivity
-        btnShowMap.setOnClickListener {
-            if (currentFlightData != null) {
-                val intent = Intent(this, FlightMapActivity::class.java)
-                // Pass departure coordinates if available
-                departureCoordinates?.let {
-                    intent.putExtra("departureLat", it.first)
-                    intent.putExtra("departureLon", it.second)
-                }
-                // Pass arrival coordinates if available
-                arrivalCoordinates?.let {
-                    intent.putExtra("arrivalLat", it.first)
-                    intent.putExtra("arrivalLon", it.second)
-                }
-                // Pass live coordinates if available
-                currentFlightData?.live?.let { live ->
-                    intent.putExtra("liveLat", live.latitude)
-                    intent.putExtra("liveLon", live.longitude)
-                }
-                startActivity(intent)
-            } else {
-                Toast.makeText(this, "Flight data not available to show map.", Toast.LENGTH_SHORT).show()
-            }
-        }
+//        btnShowMap.setOnClickListener {
+//            if (currentFlightData != null) {
+//                val intent = Intent(this, FlightMapActivity::class.java)
+//                // Pass departure coordinates if available
+//                departureCoordinates?.let {
+//                    intent.putExtra("departureLat", it.first)
+//                    intent.putExtra("departureLon", it.second)
+//                }
+//                // Pass arrival coordinates if available
+//                arrivalCoordinates?.let {
+//                    intent.putExtra("arrivalLat", it.first)
+//                    intent.putExtra("arrivalLon", it.second)
+//                }
+//                // Pass live coordinates if available
+//                currentFlightData?.live?.let { live ->
+//                    intent.putExtra("liveLat", live.latitude)
+//                    intent.putExtra("liveLon", live.longitude)
+//                }
+//                startActivity(intent)
+//            } else {
+//                Toast.makeText(this, "Flight data not available to show map.", Toast.LENGTH_SHORT).show()
+//            }
+//        }
 
         // Start periodic UI updates every second
         startUIUpdates()
