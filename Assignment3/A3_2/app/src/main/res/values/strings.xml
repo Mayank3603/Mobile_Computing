@@ -1,0 +1,10 @@
+<!-- File: app/src/main/res/values/strings.xml -->
+
+<resources>
+    <string name="app_name">A3_2</string>
+    <string-array name="locations">
+        <item>Location A</item>
+        <item>Location B</item>
+        <item>Location C</item>
+    </string-array>
+</resources>

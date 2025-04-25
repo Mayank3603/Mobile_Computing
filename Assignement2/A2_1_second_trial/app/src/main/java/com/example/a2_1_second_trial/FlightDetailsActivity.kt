@@ -39,7 +39,7 @@ class FlightDetailsActivity : AppCompatActivity() {
 //    private lateinit var btnShowMap: Button
 
     // Your API access key
-    private val ACCESS_KEY = "362eed0c2d233181458ca8d329caa1a1"
+    private val ACCESS_KEY = "3be064db624800a00c069594a4f598fc"
 
     // Handler to update UI and fetch API periodically
     private val updateHandler = Handler(Looper.getMainLooper())
